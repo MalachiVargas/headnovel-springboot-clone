@@ -69,7 +69,7 @@ export const CreatePost = () => {
   return (
     <div className="bg-white rounded-md shadow-md text-gray-500 p-2">
       <div className="flex p-4 space-x-2 items-center">
-        <Image
+        <img
           src={session?.user?.image as string}
           height={40}
           width={40}
