@@ -14,7 +14,7 @@ export const Post = ({ post }: PostProps) => {
     <div className="flex flex-col">
       <div className="bg-white mt-6 rounded-md p-4">
         <div className="flex items-center space-x-2">
-          <Image
+          <img
             src={post.profilePic}
             height={40}
             width={40}
