@@ -8,12 +8,10 @@ export const Posts = () => {
   const dispatch = useDispatch<AppDispatch>()
   const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector
   const posts = useTypedSelector(selectPosts)
-  const FB_SERVICES =
-    'http://springbootfacebookclone-env.eba-kp8uedjt.us-east-1.elasticbeanstalk.com'
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(
-        'http://springbootfacebookclone-env.eba-kp8uedjt.us-east-1.elasticbeanstalk.com/api/v1/post',
+        'https://facebook-clone-service-production.up.railway.app/api/v1/post',
         {
           headers: {
             'Content-type': 'application/json'

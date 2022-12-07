@@ -18,8 +18,7 @@ export const CreatePost = () => {
     string | ArrayBuffer | null | undefined
   >(null)
   const dispatch = useDispatch<AppDispatch>()
-  const FB_SERVICES =
-    'http://springbootfacebookclone-env.eba-kp8uedjt.us-east-1.elasticbeanstalk.com'
+
   const handleClick = () => {
     hiddenFileInput.current?.click()
   }
@@ -48,7 +47,7 @@ export const CreatePost = () => {
     }
 
     const result = await fetch(
-      'http://springbootfacebookclone-env.eba-kp8uedjt.us-east-1.elasticbeanstalk.com/api/v1/post',
+      'https://facebook-clone-service-production.up.railway.app/api/v1/post',
       {
         body: JSON.stringify(postInfo),
         headers: {
